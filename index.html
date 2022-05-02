@@ -12,11 +12,11 @@
 </head>
 <body>
   
-  <main class="d-flex justify-content-center align-items-center flex-column">
+  <main id="app" class="d-flex justify-content-center align-items-center flex-column">
     <div class="input-block d-flex align-items-center mb-4">
-      <input class="form-control" type="text">
+      <input v-model="messaggio" class="form-control" type="text" placeholder="Testo da aggiungere">
     </div>
-    <h1>Test</h1>
+    <h1>{{messaggio}}</h1>
     <img src="" alt="">
   </main>
 
