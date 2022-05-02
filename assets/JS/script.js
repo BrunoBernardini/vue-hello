@@ -10,5 +10,12 @@ const app = new Vue({
   el: "#app",
   data: {
     messaggio: "",
+    immagine: ""
+  },
+  methods: {
+    switchImage(){
+      if(this.immagine === "") this.immagine = "./assets/img/gigachadpic.jpg";
+      else this.immagine = "";
+    }
   }
 });
